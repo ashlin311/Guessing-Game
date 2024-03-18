@@ -12,7 +12,7 @@ void main()
 	upper=50;
 	lower=0;
 	r=rand()%(upper+1-lower)+lower;
-	
+	printf("You'll have 5 attempts\n");
 	
 	
 	
@@ -30,18 +30,19 @@ void main()
 		{
 			if ((i-1)==0)
 			{
-				printf("Out of chances\n");
+				printf("Aw man , you are out of attempts\n");
 				printf("The number is %d\n",r);
 			}
 			else
 			{
 				printf("Try again\n");
-				printf("You got %d chances\n",i-1);
+				printf("You got %d more attempts\n",i-1);
 			}
 		}
 		
 		
 	}
+	
 	printf("Thank you for playing\n");
 	
 	
